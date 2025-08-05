@@ -28,9 +28,8 @@ function FeedbackForm() {
       setName('');
       setEmail('');
       setMessage('');
-    } catch (error: any) {
+    } catch (error) {
       setSubmitStatus('error');
-      console.error('Error submitting feedback:', error.message);
     } finally {
       setIsSubmitting(false);
     }
