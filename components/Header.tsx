@@ -10,7 +10,7 @@ function Header() {
         <h1 className="text-3xl font-bold text-center my-4">Feedback App</h1>
       </div>
       <div>
-        <Button> Login</Button>
+        <Button className='bg-white text-lime-900' disabled> Login</Button>
       </div>
     </div>
     </div>

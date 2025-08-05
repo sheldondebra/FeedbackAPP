@@ -49,34 +49,38 @@ function FeedbackForm() {
           </div>
         )}
         <div>
-          <Label htmlFor="name" className="block mb-1">Name</Label>
+          <Label htmlFor="name" className="mb-2">Name</Label>
           <Input
             id="name"
             value={name}
             onChange={(e) => setName(e.target.value)}
             required
+            placeholder='John Doe'
           />
         </div>
         <div>
-          <Label htmlFor="email" className="block mb-1">Email</Label>
+          <Label htmlFor="email" className="mb-2">Email</Label>
           <Input
             id="email"
             type="email"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
+            placeholder='john.deo@gmail.com'
             required
+            
           />
         </div>
         <div>
-          <Label htmlFor="message" className="block mb-1">Message</Label>
+          <Label htmlFor="message" className=" mb-2">Message</Label>
           <Textarea
             id="message"
             value={message}
             onChange={(e) => setMessage(e.target.value)}
             required
+            placeholder='Your Message ... '
           />
         </div>
-        <Button type="submit" disabled={isSubmitting}>
+        <Button type="submit" disabled={isSubmitting} className='bg-lime-600  text-white hover:bg-lime-900'>
           {isSubmitting ? 'Submitting...' : 'Submit Feedback'}
         </Button>
       </form>
